@@ -48,6 +48,6 @@ compliance [target variable for prediction]
  Null = Not responsible
  0 = Responsible, non-compliant
  1 = Responsible, compliant
-compliance_detail - More information on why each ticket was marked compliant or non-compliant
+compliance_detail - More information on why each ticket was marked compliant or non-compliant.
 
 The predictions will be given as the probability that the corresponding blight ticket will be paid on time.
