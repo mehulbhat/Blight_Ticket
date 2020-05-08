@@ -6,6 +6,7 @@ Given are two data files for use in training and validating your models: train.c
 Note: All tickets where the violators were found not responsible are not considered during evaluation. They are included in the training set as an additional source of data for visualization, and to enable unsupervised and semi-supervised approaches. However, they are not included in the test set.
 
 
+**File descriptions** (Use only this data for training your model!)
 <br>
 
     train.csv - the training set (all tickets issued 2004-2011)
@@ -56,20 +57,4 @@ ___
 
 ## Evaluation
 
-Your predictions will be given as the probability that the corresponding blight ticket will be paid on time.
-
-
-For this assignment, I created a function that trains a model to predict blight ticket compliance in Detroit using `train.csv`. Returning a series of length 61001 with the data being the probability that each corresponding ticket from `test.csv` will be paid, and the index being the ticket_id.
-
-Example:
-
-    ticket_id
-       284932    0.531842
-       285362    0.401958
-       285361    0.105928
-       285338    0.018572
-                 ...
-       376499    0.208567
-       376500    0.818759
-       369851    0.018528
-       Name: compliance, dtype: float32
+The predictions will be given as the probability that the corresponding blight ticket will be paid on time.
